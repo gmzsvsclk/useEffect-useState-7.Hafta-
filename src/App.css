@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('https://2.bp.blogspot.com/-s_mzLm2jd2E/XUWkL6ur1mI/AAAAAAAAB8U/GQyDpbpONZ0fYfY1dCN3UI57XT_Dgoy0wCK4BGAYYCw/s1600/book.jpg');
+  background-size: cover;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 70%;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Boşluğu arttır */
+}
+
+.title {
+  font-size: 2em;
+}
+
+.patient-form {
+  width: 100%;
+  display: flex;
+  flex-direction: row; /* Yanyana sıralama */
+  justify-content: space-between; /* İki öğeyi genişliğin tamamını kullanacak şekilde sıralama */
+  align-items: center;
+}
+
+.patient-form input {
+  font-size: 2em; /* İsim soyisim input'u 2 kat daha büyük */
+  margin-right: 60px; /* İsim soyisim input'u ile öncelikli kutusu arasındaki boşluğu arttır */
+  border-radius: 10px; /* Opsiyonel: Köşeleri yuvarlak yapmak için */
+}
+
+.patient-form label {
+  margin-bottom: 20px; /* Boşluğu arttır */
+}
+
+.patient-list {
+  font-size: 1em; /* İsim soyisim input'u 2 kat daha büyük */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: white; /* Hasta kayıtlarının arka planını beyaz yap */
+  padding: 20px; /* Gerekirse içeriği sınırlamak için padding ekleyebilirsiniz */
+  border-radius: 10px; /* Opsiyonel: Köşeleri yuvarlak yapmak için */
+}
+
+.priority-true .priority-button {
+  background-color: rgb(255, 132, 0) !important; /* Öncelik Ver butonu mavi */
+  color: rgb(211, 8, 8);
+}
+
+.delete-button {
+  background-color: red !important; /* Sil butonu kırmızı */
+  color: rgb(17, 11, 120);
+}
+
+button {
+  margin-left: 10px;
+  cursor: pointer;
+}
